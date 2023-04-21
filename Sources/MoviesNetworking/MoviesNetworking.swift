@@ -98,6 +98,8 @@ public final class MoviesNetworkingManager {
   
   let networkManager = NetworkManager()
   
+  public init() { }
+  
   public func getMovies() async -> Result<MoviesList, NetworkManager.NetworkError> {
     return await self.networkManager.request(
       endpoint: MoviesPath.moviesList.asEndpoint,
