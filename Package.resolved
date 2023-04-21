@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "corenetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/iamlaslo/CoreNetworking.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "eeac5c5c910db99d5cf89c2e7bab1860df320278"
+      }
+    }
+  ],
+  "version" : 2
+}
