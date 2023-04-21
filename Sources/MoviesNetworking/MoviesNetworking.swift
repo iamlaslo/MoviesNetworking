@@ -24,7 +24,7 @@ public struct MoviesList: Codable {
   }
 }
 
-public struct Movie: Codable {
+public struct Movie: Codable, Hashable, Identifiable {
   
   public var id: Int
   public var title: String
