@@ -72,23 +72,12 @@ extension MoviesPath {
     }
   }
   
-  private var header: [String: String]? {
-    switch self {
-    case .moviesList, .movieDetails:
-      return [
-        "Authorization": "Bearer \(Self.token)",
-        "Content-Type": "application/json;charset=utf-8"
-      ]
-    }
-  }
-  
   var asEndpoint: Endpoint {
     Endpoint(
       base: Self.base,
       path: self.path,
       method: self.method,
-      header: self.header,
-      body: nil
+      query: ["api_key": Self.token]
     )
   }
 }
