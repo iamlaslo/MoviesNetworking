@@ -24,27 +24,6 @@ public struct MoviesList: Codable {
   }
 }
 
-public struct Movie: Codable, Hashable, Identifiable {
-  
-  public var id: Int
-  public var title: String
-  public var originalTitle: String
-  public var originalLanguage: String
-  public var releaseDate: String
-  public var adult: Bool
-  public var voteAverage: Double
-  
-  enum CodingKeys: String, CodingKey {
-    case id
-    case title
-    case originalTitle = "original_title"
-    case originalLanguage = "original_language"
-    case releaseDate = "release_date"
-    case adult
-    case voteAverage = "vote_average"
-  }
-}
-
 enum MoviesPath {
   
   case moviesList
