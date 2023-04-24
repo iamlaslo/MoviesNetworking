@@ -9,7 +9,7 @@ import Foundation
 
 public struct Movie: Codable, Hashable, Identifiable {
   
-  static var empty: Self {
+  public static var empty: Self {
     return Movie(
       id: 0,
       title: "",
