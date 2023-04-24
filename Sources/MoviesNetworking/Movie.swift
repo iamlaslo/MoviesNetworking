@@ -29,7 +29,7 @@ public struct Movie: Codable, Hashable, Identifiable {
     case voteAverage = "vote_average"
   }
   
-  func posterUrl() -> URL? {
+  public func posterUrl() -> URL? {
     URL(string: "https://image.tmdb.org/t/p/w500/\(self.posterPath)")
   }
 }
