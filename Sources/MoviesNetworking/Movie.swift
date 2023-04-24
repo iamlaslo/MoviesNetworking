@@ -9,6 +9,19 @@ import Foundation
 
 public struct Movie: Codable, Hashable, Identifiable {
   
+  static var empty: Self {
+    return Movie(
+      id: 0,
+      title: "",
+      originalTitle: "",
+      originalLanguage: "",
+      posterPath: "",
+      releaseDate: "",
+      adult: false,
+      voteAverage: 0
+    )
+  }
+  
   public var id: Int
   public var title: String
   public var originalTitle: String
