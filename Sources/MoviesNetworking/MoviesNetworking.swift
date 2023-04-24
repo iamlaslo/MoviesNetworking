@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Combine
+
 import CoreNetworking
 
 @available(iOS 15.0, *)
-public final class MoviesNetworkingManager {
+public final class MoviesNetworkingManager: ObservableObject {
   
   let networkManager = NetworkManager()
   
