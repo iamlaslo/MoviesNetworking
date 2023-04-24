@@ -25,7 +25,7 @@ extension MoviesPath {
     case .moviesList:
       return "discover/movie"
     case .movieDetails(let id):
-      return "movies/\(id)"
+      return "movie/\(id)"
     }
   }
   
